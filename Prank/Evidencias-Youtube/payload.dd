@@ -1,0 +1,35 @@
+REM Evidencias Script
+REM Criando um novo desktop
+DELAY 220
+GUI CTRL D
+REM DELAY 2000
+GUI r
+DELAY 250
+REM Usando explorer pra abrir o youtube
+STRING cmd.exe /c explorer "https://youtu.be/ePjtnSPFWK8?t=90" & powershell -c "$wshell = New-Object -ComObject WScript.Shell; 1..50 | ForEach-Object { $wshell.SendKeys([char]175) }"
+ENTER
+DELAY 1000
+ALT TAB
+DELAY 2000
+f
+DELAY 400
+UPARROW
+UPARROW
+UPARROW
+UPARROW
+UPARROW
+UPARROW
+UPARROW
+UPARROW
+UPARROW
+UPARROW
+UPARROW
+UPARROW
+UPARROW
+UPARROW
+UPARROW
+UPARROW
+UPARROW
+UPARROW
+UPARROW
+UPARROW
