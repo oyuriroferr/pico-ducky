@@ -1,1 +1,1 @@
-powershell.exe -Command "1..10 | ForEach-Object { Start-Job -ScriptBlock { Add-Type -AssemblyName PresentationFramework; while ($true) { [System.Windows.MessageBox]::Show('Oieeeeee ' + $env:username, 'Spam Alert', 'OK', 'Exclamation') } } }"
+powershell.exe -WindowStyle Hidden -Command "1..10 | ForEach-Object { Start-Job -ScriptBlock { Add-Type -AssemblyName PresentationFramework; while ($true) { [System.Windows.MessageBox]::Show('Oieeeeee ' + $env:username, 'Spam Alert', 'OK', 'Exclamation') } } }"
