@@ -1,0 +1,1 @@
+powershell.exe -Command "1..10 | ForEach-Object { Start-ThreadJob -ScriptBlock { Add-Type -AssemblyName PresentationFramework; while ($true) { [System.Windows.MessageBox]::Show('Olááá $env:username', 'Spam Alert', 'OK', 'Exclamation') } } }"
